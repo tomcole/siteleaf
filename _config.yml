@@ -1,0 +1,58 @@
+---
+title: Tom's Site
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  project:
+    title: Project
+    output: true
+  task:
+    title: Task
+    output: true
+  team:
+    title: Team
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  worker:
+    title: Worker
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: project
+  values:
+    milestones: ''
+- scope:
+    path: ''
+    type: task
+  values:
+    project: ''
+    worker: ''
+    task: ''
+    file: ''
+- scope:
+    path: ''
+    type: team
+  values:
+    color: "#FF6600"
+- scope:
+    path: ''
+    type: worker
+  values:
+    team: ''
+permalink: pretty
